@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicode Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/fav-icon.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <img class="logo" src="./img/logo-solicode.svg" alt="logo">
+        <ul class="nav-links">
+            <li><a href="#values">Pourquoi Solicode</a></li>
+            <li><a href="#formations">Formation</a></li>
+            <li><a href="#activities">Activités</a></li>
+            <li><a href="#footer" id="contact">Contact</a></li>
+            <li><a href="" id="inscription">Inscription</a></li>
+        </ul>
+
+        <div class="options">
+            <span id="nav-line">|</span>
+
+            <div class="languages-container">
+                <select id="languages-criteria">
+                    <option value="French"> 🌍 🇫🇷 </option>
+                    <option value="English"> 🌎 🇺🇸 </option>
+                </select>
+            </div>
+
+
+            <div class="themes-container">
+                <select id="themes-criteria">
+                    <option value="Light"> ☀️ </option>
+                    <option value="Dark"> 🌑 </option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-wrapper">
+            <p class="hero-item1">innovant</p>
+            <p class="hero-item2">Passionné</p>
+            <p class="hero-item3">Motivé</p>
+            <button id="inscription-button">
+                <span>Inscris-toi</span>
+                <i class="fa-regular fa-circle-right"></i>
+            </button>
+            <img class="arrow" src="https://framerusercontent.com/images/hQINXnRQ8YFq6FL5tFl7if7Fxc.svg" alt="">
+        </div>
+
+        <div class="img-container">
+            <img id="img1" src="./img/solicode hall.jpg" alt="Solicode's Study Area">
+            <img id="img2" src="./img/students.jpg" alt="Solicode's Community">
+            <img id="img3" src="./img/student.jpg" alt="Solicode's student">
+        </div>
+        <hr style="visibility: hidden; ">
+    </section>
+
+    <section class="values-section" id="values">
+        <h1 id="values-title">Nos valeurs</h1>
+
+        <div class="values-container">
+            <div id="value1">
+                <i id="hero-icon1" class="fa-solid fa-users" style="color: #ffffff;"></i>
+                <h2>Formation inclusive</h2>
+                <i class="fa-solid fa-circle-info" style="color: #ffffff;"></i>
+                <p>Quel que soit votre niveau d’étude, la passion pour la technologie et l’envie d’apprentissage sont
+                    les seuls critères pour nous rejoindre à <span class="solicode-highlight">Solicode</span>.</p>
+            </div>
+
+            <div id="value2">
+                <i id="hero-icon2" class="fa-solid fa-graduation-cap" style="color: #ffffff;"></i>
+                <h2>Méthodologie innovante</h2>
+                <i class="fa-solid fa-circle-info" style="color: #ffffff;"></i>
+                <p>Le centre <span class="solicode-highlight">Solicode</span> est doté des moyens pédagogiques et
+                    techniques innovants favorisant
+                    l’apprentissage et la pratique des connaissances dans les meilleures conditions. La formation
+                    offerte à <span class="solicode-highlight">Solicode</span> est axée sur les technologies digitales
+                    les plus demandées au marché du travail.
+                </p>
+            </div>
+
+            <div id="value3">
+                <i id="hero-icon3" class="fa-solid fa-gears" style="color: #ffffff;"></i>
+                <h2>Pédagogie active</h2>
+                <i class="fa-solid fa-circle-info" style="color: #ffffff;"></i>
+                <p><span class="solicode-highlight">Solicode</span> adopte une pédagogie active et par projets où
+                    l’apprenant se trouve dans des situations
+                    réelles ce qui garantit une insertion professionnelle. L’apprenant est accompagné par des formateurs
+                    référants experts durant toute la période de formation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <h1 id="info-title">Centre digital solidaire Solicode - Tanger</h1>
+        <h2 id="info-title2">Accompagner les nouveaux besoins en compétences numériques</h2>
+
+        <div class="video-container">
+            <img id="solicodevid" src="./img/miniature.png" alt="Youtube Video"
+                style="box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15); border-radius: 6px;">
+            <button class="play-button" onclick="openModal()">
+                <i class="fa-solid fa-play" style="background-color: transparent; color: rgba(253, 212, 19, 1);"></i>
+            </button>
+        </div>
+
+        <div id="video-modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal()">&times;</span>
+                <iframe id="youtube-video" src="" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="about-us">
+            <i id="info-icon" class="fa-solid fa-comment-dots"></i>
+            <p>SOLICODE est un centre de formation solidaire et inclusif, ouvert aux jeunes motivés et intéressés par
+                les métiers du Développement Web et Mobile. L’apprenant à SOLICODE se considère comme acteur principal
+                tout au long de son processus d’apprentissage. C’est lui qui construit ses savoirs à travers la
+                réalisation des projets, individuels ou par groupe, inspirés du milieu professionnel afin de favoriser
+                une meilleure insertion au marché de travail. La formation au sein de SOLICODE est axée sur différents
+                volets: technique, soft-skills, entreprenariat et gestion de projet. A l’issue de cette formation, les
+                apprenants bénéficieront d’une double certification délivrée par SIMPLON et OFPPT.</p>
+        </div>
+    </section>
+
+
+    <section class="partners-section">
+        <h1 id="partners-title"> Nos partenaires </h1>
+
+        <div class="partners-container">
+            <img id="partner1" src="./img/OCP Group_s_1.png" alt="OCP">
+            <img id="partner2" src="./img/FM5 logo.png" alt="FM5">
+            <img id="partner3" src="./img/offpt logo.png" alt="OFPPT">
+        </div>
+    </section>
+
+
+    <section class="formations-section" id="formations">
+        <h1 id="formations-title">Nos formations</h1>
+
+        <div class="formations-container">
+            <div id="developpement-web">
+                <i id="web-icon" class="fa-solid fa-laptop-code" style="color: #ffffff;"></i>
+                <h2>Développement Web</h2>
+                <i class="fa-solid fa-circle-info" style="color: #ffffff;"></i>
+                <p>Le <span class="dev-highlight">développeur web</span> réalise l’ensemble des fonctionnalités
+                    techniques d’une application web.</p>
+            </div>
+
+            <div id="developpement-mobile">
+                <i id="mobile-icon" class="fa-solid fa-mobile-screen-button" style="color: #ffffff;"></i>
+                <h2>Développement Mobile</h2>
+                <i class="fa-solid fa-circle-info" style="color: #ffffff;"></i>
+                <p>Le <span class="dev-highlight">développeur mobile</span> effectue la réalisation technique et le
+                    développement informatique
+                    d’applications mobiles.
+                </p>
+            </div>
+        </div>
+
+
+        <div id="web-modal">
+            <div class="modal-content2">
+                <span class="close">&times;</span>
+                <h2>Parcours de formation</h2>
+                <img src="./img/Solicode_roadmap_5.png" alt="Roadmap" />
+            </div>
+        </div>
+    </section>
+
+
+    <section class="stats-section">
+        <h1 id="stats-title"> Solicode en chiffres </h1>
+
+        <div class="stats-container">
+            <div id="stat1">
+                <span class="number" id="staff-number">12</span>
+                <h2>Staff</h2>
+            </div>
+
+            <div id="stat2">
+                <span class="number" id="places-number">120</span>
+                <h2>Places pédagogiques</h2>
+            </div>
+
+            <div id="stat3">
+                <span class="number" id="laureats-number">43</span>
+                <h2>Lauréats</h2>
+            </div>
+
+            <div id="stat4">
+                <span class="number" id="filieres-number">2</span>
+                <h2>Filières</h2>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="activities-section" id="activities">
+        <h1 id="activities-title">Nos activités</h1>
+
+        <div class="activities-container">
+
+            <div class="activity" id="pub1">
+                <iframe src="https://www.instagram.com/p/C69TJpVoKd7/embed" frameborder="0" scrolling="no"
+                    allowtransparency="true" style="position: absolute; top: -120px; left: 0; border: none;">
+                </iframe>
+                <!-- <iframe src="https://www.instagram.com/p/C69TJpVoKd7/embed" width="400" height="500" frameborder="0" scrolling="no" allowtransparency="true"   allow="autoplay; fullscreen; picture-in-picture"></iframe> -->
+                <span class="instagram-icon"><i class="fa-brands fa-instagram"
+                        style="color:rgba(16, 30, 87, 1); background-color: transparent;"></i></span>
+            </div>
+
+            <div class="activity" id="pub2">
+                <iframe src="https://www.instagram.com/reel/DBCYUlbtyCB/embed" width="" height="" frameborder="0"
+                    scrolling="no" allowtransparency="true"
+                    style="position: absolute; top: -116px; left: 0; border: none;">
+                </iframe>
+                <!-- <iframe src="https://www.instagram.com/reel/DBCYUlbtyCB/embed" width="540" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe> -->
+                <span class="instagram-icon"><i class="fa-brands fa-instagram"
+                        style="color:rgba(16, 30, 87, 1); background-color: transparent;"></i></span>
+            </div>
+
+            <div class="center-text">
+                <p>Célébrer. Innover.<br>Collaborer.</p>
+            </div>
+
+            <div class="activity" id="pub3">
+                <iframe src="https://www.instagram.com/reel/CzDu538LqY9/embed" width="" height="" frameborder="0"
+                    scrolling="no" allowtransparency="true"
+                    style="position: absolute; top: -116px; left: 0; border: none;">
+                </iframe>
+                <!-- <iframe src="https://www.instagram.com/reel/CzDu538LqY9/embed" width="540" height="600" frameborder="0"
+                    scrolling="no" allowtransparency="true"></iframe> -->
+                <span class="instagram-icon"><i class="fa-brands fa-instagram"
+                        style="color:rgba(16, 30, 87, 1); background-color: transparent;"></i></span>
+            </div>
+
+            <div class="activity" id="pub4">
+                <iframe src="https://www.instagram.com/reel/C7CbdcnolR9/embed" width="" height="" frameborder="0"
+                    scrolling="no" allowtransparency="true"
+                    style="position: absolute; top: -116px; left: 0; border: none;">
+                </iframe>
+                <!-- <iframe src="https://www.instagram.com/reel/C7CbdcnolR9/embed" width="540" height="600" frameborder="0"
+                    scrolling="no" allowtransparency="true"></iframe> -->
+                <span class="instagram-icon"><i class="fa-brands fa-instagram"
+                        style="color:rgba(16, 30, 87, 1); background-color: transparent;"></i></span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonies-section">
+        <h1 id="testimonies-title">Témoignage</h1>
+
+        <div class="testimonies-container">
+            <span class="slider-control prev" id="left-button">&lt;</span>
+
+            <div class="testimonial active">
+                <span class="open quote">“</span>
+                <div class="image">
+                    <div class="clip"></div>
+                    <img src="./img/student's testimony2.jpg">
+                </div>
+                <p>Cette école a changé ma vie et ma façon de voir les choses. Il n'y a pas de mots pour décrire à quel
+                    point je suis reconnaissant et fier d'être un Solicoder. Merci ne sera jamais suffisant.</p>
+                <div class="source">
+                    <span>Ronald Weasley</span>
+                </div>
+                <span class="close quote">”</span>
+            </div>
+
+            <div class="testimonial">
+                <span class="open quote">“</span>
+                <div class="image">
+                    <div class="clip"></div>
+                    <img src="./img/student's testimony3.jpg">
+                </div>
+                <p>Solicode n'est pas juste une école, c'est une famille qui m'a aidé à découvrir mon potentiel et à
+                    croire en moi. Grâce à eux, j'ai transformé ma vie et mon avenir. Je serai éternellement
+                    reconnaissant de faire partie de cette communauté incroyable.</p>
+                <div class="source">
+                    <span>John Snow</span>
+                </div>
+                <span class="close quote">”</span>
+            </div>
+
+            <div class="testimonial">
+                <span class="open quote">“</span>
+                <div class="image">
+                    <div class="clip"></div>
+                    <img src="./img/student's testimony1.jpg">
+                </div>
+                <p>Les défis relevés
+                    et le soutien constant m’ont permis de découvrir des capacités insoupçonnées et de construire un
+                    avenir solide avec assurance. Cette expérience restera gravée comme un tournant majeur dans ma vie.
+                </p>
+                <div class="source">
+                    <span>Harry Potter</span>
+                </div>
+                <span class="close quote">”</span>
+            </div>
+
+            <span class="slider-control next" id="right-button">&gt;</span>
+        </div>
+    </section>
+
+
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+
+            <div class="footer-left">
+                <img src="./img/logo-solicode.svg" alt="SoliCode Logo" class="footer-logo">
+                <h3>Contactez-nous</h3>
+                <span class="icon"><i class="fa-solid fa-envelope"></i> Email : &nbsp <a
+                        href="mailto:info@solicode.co">info@solicode.co</a></span><br>
+                <span class="icon"><i class="fa-solid fa-phone"></i> Tel : (212) 0634 39 05 05</span> <br>
+                <span class="icon"><i class="fa-solid fa-fax"></i> Fixe : (212) 0539 30 88 85</span> <br>
+
+                <div class="social-icons">
+                    <h3>Vous pouvez nous trouver sur :</h3>
+                    <a href="https://web.facebook.com/solicodetanger" class="icon" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/solicodetanger/" class="icon" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/school/solicode-tanger/posts/?feedView=all" class="icon" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@SolicodeTanger" class="icon" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <h3>Centre digital solidaire Solicode - Tanger</h3>
+
+                <p> <i class="fa-solid fa-location-dot"></i>&nbsp Bni Waryaghel 90000 Tanger, Maroc</p>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12952.748024056044!2d-5.8253936!3d35.7462081!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b87c216892bc7%3A0x48bdf85995e9c186!2sSolicode%20Tanger!5e0!3m2!1sen!2sma!4v1733230680008!5m2!1sen!2sma"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>Copyrights © 2024 All Rights Reserved by <span>SoliCode</span>.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
